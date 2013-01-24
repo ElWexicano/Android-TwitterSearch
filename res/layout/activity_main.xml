@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+	    <TextView
+	        android:id="@+id/greetingTextView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="34dp"
+	        android:text="@string/greeting" />
+	    
+	    <EditText
+	        android:id="@+id/searchEditText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/greetingTextView"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="29dp"
+	        android:ems="10" 
+	        android:hint="@string/hint">
+					
+	    </EditText>
+
+	    <Button
+	        android:id="@+id/searchButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/searchEditText"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/button_search" />
+	    
+    </RelativeLayout>
+    
+
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+
+	    <TextView
+	        android:id="@+id/resultsTextView"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/results" />
+	    
+	    <ListView
+	        android:id="@+id/tweetsListView"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_below="@+id/resultsTextView" />
+	    
+	</RelativeLayout>
+
+</LinearLayout>
