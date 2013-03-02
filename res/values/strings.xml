@@ -9,5 +9,6 @@
     <string name="results">Your Search Results:</string>
     <string name="username">Username</string>
     <string name="tweet">This is an awesome tweet!!</string>
+    <string name="image_desc">The user image.</string>
     
 </resources>
